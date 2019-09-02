@@ -4,48 +4,37 @@ taxonomy:
     category: docs
 ---
 
-# The Coordinate Library
+**Coordinate** is a lightweight library that allows you to write scalable and highly maintainable iOS apps.
 
-The Coordinate Library is a small library to help you get started with the Coordinator Pattern in your iOS App.
- 
-**Coordinate** provides a better way to structure your App's Navigation, using `Coordianotor` classes to build the Navigation Flow and deciding when and how your UIViewControllers are presented. This makes your UIViewControllers much more simple, easier to maintain, to test and trully encapsulated, as they do not know anything about their surroudings, like what other UIViewController presented them or what is the next UIViewController on the Navigation Flow. 
+It implements the _Coordinator Pattern_ and a few other concepts to help you build apps with a structure that is very easy to understand, with great separation of concerns, a clear navigation flow and encapsulated objects so that you can spend more time implementing cool features and less time refactoring.
 
-A second benefit is that by using `Coordinators` you can turn you UIViewControllers into simple input/output classes that do not need dependencies to get Data, the `Coordinator` talks with whatever data source it needs and passes to the UIViewControllers
+You only need to use **Coordinate** with standard UIKit, without the need of frameworks/libraries that introduce too much abstraction in your code.
+But because it is a simple library, you can actually combine with frameworks/libraries of your preference and progressively introduce it in your code.
 
-The result is a much simpler architecture for your App, one that everybody can easily understand the Navigation Flow, one that you can easily re-use or move UIViewControllers without having to waste time refactoring and thus improving your productivity and maintanability of your App in the future.
+#### Installation
 
-## The Coordinator Pattern
+**Coordinate** is available with CocoaPods:
 
-The Coordinator Pattern is a design pattern for iOS, that allows you to create scalabe, flexibly and highly maintainable code. 
+```
+pod 'Coordinate', 	:git => 'https://github.com/codexperience-io/coordinate.git'
+```
 
-### Why? 
+More details on the [installation](../installation) page.
 
-If you have been developing for iOS for a while, you probably have already experienced some of the following issues:  
-- Massive View Controller, when a UIViewController get too big and hard to mantain, change and understand
-- Entanglement between UIViewControllers, when the children know too much about the parent and how to present the next item in the navigation flow, this makes it very hard to change your code because if you change a Class, often you have to change 2 or more other just to change where it is in the navigation flow, without really changing any business logic
-- Understanding the navigation flow of an App gets harder as it grows, because the code is spread around many UIViewControllers in different methods and often it is not clear what is the real sequence of navigation
-- Testing complex UIViewControllers is hard, because often you have to mock stuff that you dont need just to test a small part of the logic
+#### Coordinate Example App
 
-Why does this happen? UIViewControllers do too much, and this makes turns them into these "monster" UIViewControllers that we sometimes end up with. Normally a UIViewController has to take care of:
-- Navigation Flow
-- Data Fetching and Mutation
-- Model-View binding
-- User input
-- Managing subviews
+Although we try our best to make **Coordinate** as self-explanatory as possible, we put together an app that covers some common use cases and which source code you can use to play around and follow along as you read on.
 
-Of course there are frameworks out there that try to solve some of these issues but they often are too complex and/or introduce too much abstraction on top of Cocoa, making it hard to learn for new commers and other sort of problems that you must be familiar with if you tried them.
+The [Coordinate Example App](https://github.com/codexperience-io/coordinate-example-app) is available on GitHub and read the commented code bits at [Example App Explained](../../example-app)
 
-That is why using the Coordinatar Pattern is both easier and more maintainable, because to solve these problems you dont have to break ways with Cocoa, you will still need it.
+### Learning 
 
-### How? 
+We have put together learning material that we think will help you understand **Coordinate** and quickly start using it.
 
-The way the Coordinator Pattern does this is by taking care of some of the responsabilities of the UIViewController:
-- Navigation Flow
-- Data Fetching and Mutation
+#### Motivation and Why Coordinate
 
-By removing some of the concerns of the UIViewControllers and putting in on a place where it is easy to understand and maintain (a Coordinator), the UIViewControllers become simpler classes that receive an input and produce an output, without having to depend on anything else and without knowing where they are in the Navigation Flow, giving you the flexibility to re-use them or change where they appear, without changing a single line of code.
+We list some of the problems an iOS Developer commonly faces and why we think **Coordinate** is a good solution for them.
 
-On top of that, theres an Example App that shows you how the concepts are used together, like Routing and Dependencies.
+#### Concepts
 
-Now, the Coordinator Pattern in itself is not new, I belive it was first presented by Soroush Khanlou at NSSpain 2015 (check https://vimeo.com/144116310). And for the Coordinate Library initial implementation, I based myself on some of the ideas of the implementation made by Aleksandar Vacić (check https://github.com/radianttap/Coordinator), re-used some code and introduced some different concepts.
-I did so because I realised that some issue arise when using the Coordinator Pattern in previous implementations. More on that in Prior Art and Motivation.
+It is important to understand the _Coordinate Pattern_ and some other concepts and principles in **Coordinate** in order to use it at its full potential.
