@@ -25,7 +25,7 @@ More details on the [installation](../installation) page.
 
 Although we try our best to make **Coordinate** as self-explanatory as possible, we put together an app that covers some common use cases and which source code you can use to play around and follow along as you read on.
 
-The [Coordinate Example App](https://github.com/codexperience-io/coordinate-example-app) is available on GitHub and read the commented code bits at [Example App Explained](../../example-app)
+The [Coordinate Example App](https://github.com/codexperience-io/coordinate-example-app) is available on GitHub.
 
 ### Learning 
 

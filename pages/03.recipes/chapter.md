@@ -4,7 +4,7 @@ taxonomy:
     category: docs
 ---
 
-### Chapter 2
+### Chapter 3
 
 # Recipes
 
