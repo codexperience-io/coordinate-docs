@@ -11,7 +11,7 @@ It implements the _Coordinator Pattern_ and a few other concepts to help you bui
 You only need to use **Coordinate** with standard UIKit, without the need of frameworks/libraries that introduce too much abstraction in your code.
 But because it is a simple library, you can actually combine with frameworks/libraries of your preference and progressively introduce it in your code.
 
-#### Installation
+### Installation
 
 **Coordinate** is available with CocoaPods:
 
@@ -21,9 +21,9 @@ pod 'Coordinate', 	:git => 'https://github.com/codexperience-io/coordinate.git'
 
 More details on the [installation](../installation) page.
 
-#### Coordinate Example App
+### Coordinate Example App
 
-Although we try our best to make **Coordinate** as self-explanatory as possible, we put together an app that covers some common use cases and which source code you can use to play around and follow along as you read on.
+Although we try our best to make **Coordinate** as self-explanatory as possible, we made an example app that covers some common use cases and which source code you can use to play around and follow along as you read on.
 
 The [Coordinate Example App](https://github.com/codexperience-io/coordinate-example-app) is available on GitHub.
 
