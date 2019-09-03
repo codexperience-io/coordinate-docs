@@ -9,7 +9,7 @@ taxonomy:
 Install using [CocoaPods](https://cocoapods.org/) to easily get the most up to date version of Coordinate.
 
 ```
-pod 'Coordinate', 	:git => 'https://github.com/codexperience-io/coordinate.git'
+pod 'Coordinate'
 ```
 
 ## Manually
