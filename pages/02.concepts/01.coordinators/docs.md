@@ -53,6 +53,8 @@ The `TabBarCoordinator` is a specialized ContainerCoordinator, to be used with a
 It has specialized presentation methods that mirror the ones from `UITabBarController`
 
 
+! We do not cover all the UIViewControllers. The idea is that you can use the `ContainerCoordinator` for most of your cases. If not, then you can subclass it and adapt to your needs. And if you think it is generic enough and can be shared, feel free to contribute to the project.
+
 ### Structure
 
 If you imagine the structure of an app as a tree with _nodes_ ,_branches_ and _leafs_, the `Coordinators` with children (ContainerCoordinator, NavigationCoordinator, TabBarCoordinator) are the _nodes_, the presentation methods are the _branches_ and the `Coordinators` without children are the _leafs_ (Coordinator)
